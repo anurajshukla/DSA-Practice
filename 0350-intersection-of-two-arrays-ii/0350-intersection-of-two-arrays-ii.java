@@ -1,11 +1,11 @@
 class Solution {
     public int[] intersect(int[] nums1, int[] nums2) {
-        int l1 = nums1.length;
-        int l2 = nums2.length;
+        int n = nums1.length;
+        int m = nums2.length;
         int i = 0, j = 0, k = 0;
         Arrays.sort(nums1);
         Arrays.sort(nums2);
-        while( i < l1 && j < l2)
+        while( i < n && j < m)
         {
             if(nums1[i] < nums2[j])
             {

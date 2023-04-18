@@ -1,7 +1,6 @@
 class Solution {
     public int[] intersect(int[] nums1, int[] nums2) {
-        int n = nums1.length;
-        int m = nums2.length;
+        int n = nums1.length, m = nums2.length;
         int i = 0, j = 0, k = 0;
         Arrays.sort(nums1);
         Arrays.sort(nums2);

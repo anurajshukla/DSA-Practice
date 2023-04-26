@@ -4,8 +4,7 @@ class Solution {
         int i = 0, j = 0, k = 0;
         Arrays.sort(nums1);
         Arrays.sort(nums2);
-        while( i < n && j < m)
-        {
+        while( i < n && j < m) {
             if(nums1[i] < nums2[j])
             {
                 i++;

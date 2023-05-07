@@ -1,5 +1,5 @@
-# LeetCode-Question
-Uploading solved LeetCode question periodically
+# DSA - Practice 
+Uploading solved DSA questions on LeetCode, Gfg periodically
 
 ### Profile: <br> 
 <a href="https://leetcode.com/anurajshukla3112/" target="_blank">

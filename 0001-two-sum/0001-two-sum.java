@@ -1,3 +1,5 @@
+// For 2 sum question 
+
 class Solution {
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> a = new HashMap<>();

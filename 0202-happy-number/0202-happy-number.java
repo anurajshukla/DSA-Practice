@@ -10,11 +10,11 @@ class Solution {
         return slow == 1;
     }
     public int happy(int n) {
-        int sum = 0;
-        while (n > 0) {
-            int digit = n % 10;
-            sum += digit * digit;
-            n /= 10;
+        char[] c = Integer.toString(n).toCharArray();
+        int mul=1, sum=0;
+        for(int i=0; i<c.length; i++) {
+            mul = (c[i] - '0')*(c[i] - '0');
+            sum += mul;
         }
         return sum;
     }

@@ -32,6 +32,5 @@ class Solution {
             result = chars.pop() + result;
          }
         return result;
-
     }
 }

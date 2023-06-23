@@ -3,14 +3,13 @@ class Solution {
         Stack<Character> stack = new Stack<>();
         char [] c = s.toCharArray();
         for(int i=0; i<c.length; i++) {
-            if(c[i] == '*') { stack.pop();}       
+            if(c[i] == '*') { stack.pop(); }
             else { stack.push(c[i]); }
         }
-        StringBuilder sb = new StringBuilder();
-        for(int i= stack.size()-1; i>=0; i-- ) {
-            sb.append(stack.pop());
+        StringBuilder st = new StringBuilder();
+        for( char ch : stack ) {
+            st.append(ch);
         }
-        
-        return sb.reverse().toString();
+        return st.toString();
     }
 }

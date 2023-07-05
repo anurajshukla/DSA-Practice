@@ -3,10 +3,12 @@ class Solution {
         Stack<Integer> stack = new Stack<>();
         int n = temperatures.length;
         int[] ans = new int[n];
-        
-        for(int i=0; i<n; i++) {
-            while(!stack.isEmpty() && (temperatures[i] > temperatures[stack.peek()])) {
-                ans[stack.peek()] = i- stack.pop();
+        for(int i = n - 1; i >= 0; i--) {
+            while(!stack.isEmpty() && temperatures[i] >= temperatures[stack.peek()]) {
+                stack.pop();
+            }	
+            if(!stack.isEmpty()) {
+                ans[i] = stack.peek() - i;
             }
             stack.push(i);
         }

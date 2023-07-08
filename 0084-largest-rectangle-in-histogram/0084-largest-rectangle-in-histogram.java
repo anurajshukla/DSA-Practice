@@ -3,6 +3,7 @@ class Solution {
         Stack<Integer> stack = new Stack<>();
         stack.push(-1);
         int max=0, n=heights.length;
+        // putting in stack
         for(int i=0; i<n; i++) {
             while((stack.peek() != -1) && (heights[stack.peek()] >= heights[i])) {
                 int height = heights[stack.pop()];
